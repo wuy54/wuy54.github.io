@@ -1,0 +1,52 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.clocks {
+    display: flex;
+}
+
+.clock {
+    margin: 20px;
+    font-size: 24px;
+}
+
+#weather {
+    margin-top: 20px;
+    font-size: 20px;
+}
+
+#countdown {
+    margin-top: 20px;
+    font-size: 20px;
+}
+
+.basketball-container {
+    width: 100px;
+    height: 100px;
+    position: relative;
+    overflow: hidden;
+}
+
+.basketball {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    bottom: 0;
+    animation: bounce 0.5s infinite alternate;
+}
+
+@keyframes bounce {
+    0% {
+        bottom: 0;
+    }
+    100% {
+        bottom: 50px;
+    }
+}
